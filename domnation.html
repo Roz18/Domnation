@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+
+<body>
+   
+    <style>
+      body {
+        background: #17172c;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Segoe Script";
+        font-size: xx-large;
+        text-shadow: #fc0 1px 0 10px;
+        margin: 10px 0px 7px;
+      }
+      .glow {
+        font-size: 35px;
+        color: #f0e4c6;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 8px #ffffffc3, 0 0 10px #ffffffc4, 0 0 10px #e69200,
+            0 0 20px #fbbc01, 0 0 30px #fbbc01, 0 0 30px #fbbc01,
+            0 0 50px #fbbc01;
+        }
+
+        to {
+          text-shadow: 0 0 10px #ffffffe6, 0 0 20px #bd4c1f, 0 0 30px #bd4c1f,
+            0 0 30px #bd4c1f 0 0 40px #bd4c1f, 0 0 50px #bd4c1f 0 0 60px #bd4c1f;
+        }
+      }
+      h2 {
+        font-size: xx-larger;
+        color: #ffffffae;
+        font-family: "Segoe Script";
+        padding: 4px 0px 8px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 60%;
+      }
+
+      p {
+        color: #ffffffae;
+        font-family: "Segoe Print";
+        font-size: smaller;
+        text-align: center;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+      .artist {
+        display: block;
+        font-family: "Segoe Print";
+        color: #501a05;
+        margin-top: 15px;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      button {
+        padding: 15px 20px 15px;
+        border-radius: 15px;
+        font-size: large;
+        font-family: "Segoe Script";
+        border: 0.5px;
+        display: block;
+        color: #fbbc01a1;
+        background-color: transparent;
+        transition: all 200ms ease;
+        margin: 20px auto;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+      }
+
+      .glow-button:hover {
+        color: rgb(252, 234, 135);
+        box-shadow: 0 5px 15px rgba(182, 164, 92, 0.723);
+      }
+      .box-shadow-hover:hover {
+        margin: auto;
+        background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+        padding: 20px 15px 20px;
+        box-sizing: border-box;
+        width: 30%;
+        align-self: center;
+
+        padding: 5px;
+        border-radius: 15px;
+      }
+
+      .pointer {
+        cursor: pointer;
+      }
+      .container {
+        max-width: 666px;
+        margin: 0 auto;
+      }
+      .elemlents {
+      }
+    </style>
+    
+
+    <div class="container">
+      <h1 class="glow">Witch and her familiar</h1>
+
+      <h2>Domination for you and your imp</h2>
+      <img src="https://64.media.tumblr.com/a3b222ea471e2e9843b2fd964bbde1fa/e45e35813259fd63-e5/s1280x1920/6397fb8070e6ea3f150ad11e66f8ec952e52a6ad.jpg" alt="Greek Yogurt">
+      <p>
+        The bond between witches and their familiars is a sinister one, steeped
+        in darkness and treachery. These so-called companions, also known as
+        imps, take on the guise of harmless household pets, but their true
+        purpose is far more ominous. As the legends tell it, familiars are
+        nothing less than demonic guides, sent to aid witches in their
+        malevolent spells. With unwavering loyalty, they stalk the earth in
+        animal form, watching and waiting for their next victim. Beware the
+        witch and her familiar, for they are a fearsome duo, united in their
+        quest for dark magic and domination.
+      </p>
+      <a href="https://asya_yordanova.artstation.com/" target="_blank" class="artist">
+        Find the artist here
+      </a>
+
+      <button class="glow-button">Get your own familiar</button>
+      <p class="footer">This page was built by Rusanne Visagie</p>
+    </div>
+    <script>
+      function change() {
+        let elements = prompt(
+          "Which primal element haunts you? Water's tempestuous tides, fire's scorching flames, earth's merciless solidity, or air's relentless gusts?"
+        );
+
+        if (elements === "water") {
+          alert("The Leviathan, disguised as a Laticauda ");
+        } else if (elements === "fire") {
+          alert("The Dragon, disguised as a Bearded Dragon");
+        } else if (elements === "earth") {
+          alert("The Antaeus, disguised as a Aardvark");
+        } else if (elements === "air") {
+          alert("The Roc, disguised as a Falcon");
+        } else {
+          alert(
+            "Your feeble attempt has only brought me confusion. Speak clearly and choose wisely: fire, earth, air, or water"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", change);
+    </script>
+  
+
+</body></html>
